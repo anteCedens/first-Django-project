@@ -86,7 +86,7 @@ DATABASES = {
 """
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://xjkqxfdlmcghel:220a96de4ba9e02f12174984aa89f89fdd3b7a570c16b0f0d5e018a123374a5d@ec2-54-217-213-79.eu-west-1.compute.amazonaws.com:5432/dcn39rif7okbfl')
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
